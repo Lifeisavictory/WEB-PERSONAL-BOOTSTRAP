@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" type="text/css" href="./styles/style.css"/>
+    <link rel="shortcut icon" href="./images/icon.png"/>
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet"/>
+    <!-- popis pro vyhledavace-->
+    <meta name="description"
+          content="Mé dovednosti, mezi které patří Java, Spring Boot, React, HTML, CSS a Bootstrap."/>
+    <meta name="keywords"
+          content="programátor, html, java, react, springboot, html, css, bootstrap"/>
+    <meta name="author" content="lifeisavictory"/>
+    <title>Tomáš Salamánek</title>
+</head>
+
+<body>
+<!-- IKONY PRO BOOTSTRAP -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
+    <symbol id="bootstrap-color" viewBox="0 0 118 94">
+        <title>Bootstrap</title>
+        <path fill-rule="evenodd" clip-rule="evenodd" fill="#7952B3"
+              d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+    </symbol>
+    <symbol id="github-color" viewBox="0 0 16 16">
+        <title>GitHub</title>
+        <path fill="#181717"
+              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+    </symbol>
+    <symbol id="linkedin-color" viewBox="0 0 25 25">
+        <title>LinkedIn</title>
+        <rect width="25" height="25" fill="#0A66C2"/>
+        <path fill="#FFFFFF"
+              d="M6.5 9h3v11h-3V9zm1.5-4a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm4 4h2.9v1.5h.04c.4-.75 1.4-1.5 2.9-1.5 3.1 0 3.7 2 3.7 4.6V20h-3v-5.2c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V20h-3V9z"/>
+    </symbol>
+</svg>
+
+<!-- SEKCE - HEADER -->
+<header>"
+    <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center py-4 border-bottom border-black">
+        <div class="col-md-6">
+            <a href="https://www.salamanek.cz"
+               class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <span class="fs-3">Tomáš Salamánek</span>
+            </a>
+        </div>
+        <div class="col-md-6 text-md-end">
+            <ul class="nav nav-pills justify-content-md-end justify-content-center">
+                <li class="nav-item"><a href="index.html" class="nav-link touchbutton me-1" aria-current="page">Domů</a>
+                </li>
+                <li class="nav-item"><a href="skills.html" class="nav-link active touchbutton me-1">Dovednosti</a></li>
+                <li class="nav-item"><a href="references.html" class="nav-link touchbutton me-1">Projekty</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link touchbutton">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!-- SEKCE - ARTICLE -->
+<article>
+    <header>
+        <h1>Dovednosti</h1>
+    </header>
+
+    <section>
+        <div class="container py-3">
+            <div class="row text-center">
+
+                <!-- Sloupec 1 -->
+                <div class="col-12 col-md-4 mb-3 d-flex justify-content-around">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML" width="50" height="50"/>
+                    </a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"
+                       rel="noopener noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
+                             alt="CSS" width="50" height="50"/>
+                    </a>
+                    <a href="https://getbootstrap.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg"
+                             alt="Bootstrap" width="50" height="50"/>
+                    </a>
+                </div>
+
+                <!-- Sloupec 2 -->
+                <div class="col-12 col-md-4 mb-3 d-flex justify-content-around">
+                    <a href="https://www.mysql.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.simpleicons.org/mysql/4479A1" alt="MySQL" width="50" height="50"/>
+                    </a>
+                    <a href="https://docs.oracle.com/en/java/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"
+                             alt="Java" width="50" height="50"/>
+                    </a>
+                    <a href="https://spring.io/projects/spring-boot" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.simpleicons.org/springboot/6DB33F" alt="Spring Boot" width="50"
+                             height="50"/>
+                    </a>
+                </div>
+
+                <!-- Sloupec 3 -->
+                <div class="col-12 col-md-4 mb-3 d-flex justify-content-around">
+                    <a href="https://reactjs.org/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="50" height="50"/>
+                    </a>
+                    <a href="https://www.docker.com/" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" width="50" height="50"/>
+                    </a>
+                    <a href="https://github.com/lifeisavictory" target="_blank" rel="noopener noreferrer">
+                        <img src="https://cdn.simpleicons.org/github/501DAF" alt="GitHub" width="50" height="50"/>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5">
+        <div class="row text-center gy-4">
+
+            <!-- HTML -->
+            <div class="col-12 col-md-4 d-flex flex-column p-3 border-md-end">
+                <img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML" width="80" height="80"
+                     class="mb-3 align-self-center"/>
+                <h2>HTML</h2>
+                <p>
+                    S <strong>HTML</strong> jsem v kurzech na ITnetwork začal jako naprostý začátečník a jeho pochopení
+                    ve spojení s <strong>CSS</strong> bylo základním předpokladem pro pokračování na mojí cestě. Tyto
+                    znalosti posléze rozšířil kurz Bootstrapu.
+                </p>
+            </div>
+
+            <!-- Java -->
+            <div class="col-12 col-md-4 d-flex flex-column p-3 border-md-end">
+                <img src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg" alt="Java"
+                     width="80" height="80" class="mb-3 align-self-center"/>
+                <h2>Java</h2>
+                <p>
+                    <strong>Javu</strong> jsem se učil z tutoriálů na ITnetwork a na jejich prezenčních školeních.
+                    Získal jsem tak základní znalosti o tom, jak se programuje v Javě a co mohu čekat od OOP. S
+                    příchodem kurzů <strong>Spring Boot</strong> a React nabrala Java úplně nový rozměr. Na back-endu je
+                    to skvělý pomocník.
+                </p>
+            </div>
+
+            <!-- React -->
+            <div class="col-12 col-md-4 d-flex flex-column p-3">
+                <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" width="80" height="80"
+                     class="mb-3 align-self-center"/>
+                <h2>React</h2>
+                <p>
+                    K jeho základnímu pochopení je bezpodmínečně nutná alespoň základní orientace v
+                    <strong>JavaScriptu</strong>. Postupem času jsem zjistil, jak skvěle funkční je
+                    <strong>React</strong> jako front-endová část projektů.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+</article>
+
+<!-- SEKCE - FOOTER -->
+<div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-black border-top">
+        <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" aria-label="Bootstrap">
+                <svg class="bi" width="32" height="32" aria-hidden="true">
+                    <use xlink:href="#bootstrap-color"></use>
+                </svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2025 Salamánek Tomáš</span>
+        </div>
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+                <a class="text-body-secondary" href="http://www.linkedin.com/in/salamanek" aria-label="LinkedIn">
+                    <svg class="bi img-thumbnail" width="32" height="32" aria-hidden="true">
+                        <use xlink:href="#linkedin-color"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="ms-3">
+                <a class="text-body-secondary" href="https://github.com/lifeisavictory" aria-label="GitHub">
+                    <svg class="bi img-thumbnail" width="32" height="32" aria-hidden="true">
+                        <use xlink:href="#github-color"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </footer>
+</div>
+
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="js/scripts.js"></script>
+</body>
+</html>
